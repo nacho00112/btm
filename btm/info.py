@@ -13,11 +13,11 @@ LONG_DESCRIPTION_CONTENT_TYPE = 'text/markdown'
 CLASSIFIERS = ['Programming Language :: Python :: 3.7', 'Programming Language :: Python :: Implementation :: CPython']
 ZIP_SAFE = False
 AUTHOR = 'Nacho00112'
-VERSION = '1.0.1'
+VERSION = '1.0.2'
 LICENSE = 'mit'
 PYTHON_REQUIRES = '>=3.7'
 URL = 'https://github.com/nacho00112/btm'
-DOWNLOAD_URL = 'https://github.com/nacho00112/btm/archive/v1.0.1.tar.gz'
+DOWNLOAD_URL = 'https://github.com/nacho00112/btm/archive/v1.0.2.tar.gz'
 AUTHOR_EMAIL = 'thurealrubiogame@gmail.com'
 PACKAGES = ['btm']
 PLATFORMS = 'any'
