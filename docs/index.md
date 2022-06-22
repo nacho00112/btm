@@ -1,4 +1,4 @@
-btm (Built-ins Types Modificator for python) - Documentation
+btm (Built-in Types Modificator for python) - Documentation
 =========================================
 
 addattr
