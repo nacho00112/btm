@@ -20,8 +20,8 @@ subattr
 
 Alias for addattr, this is only a convenction,
 use addattr when you are adding attributes, and
-btm.subattr when you are substituting attributes.
-
+btm.subattr when you are substituting attributes,
+for example if you want to substitute the `str.replace` method
 ```python
 import btm
 print(btm.addattr is btm.subattr) # Output: True
@@ -70,7 +70,10 @@ class list:
             print(self.decoration % each)
 ["Hello World!", "Eggs", "Spam"].pretty_print()
 try:
-    # unfortunately attributes are immutable, but the next lesson have a trick for solve this
+    # unfortunately attributes are immutable,
+    # you only can substitute existing attributes,
+    # for example, if you want to substitute list.append,
+    # but the in next lesson you learn a trick for solve this
     [].decoration = "+" * 10 + "\n%s\n" + "+" * 10
 except AttributeError:
     print("built-in types attributes are immutable")
