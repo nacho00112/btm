@@ -17,7 +17,7 @@ How this works!?
 - no preprocessors
 
 Using the native library ctypes:
-`ctypes.pythonapi._PyObject_GetDictPtr do the trick.`
+`ctypes.pythonapi._PyObject_GetDictPtr` do the trick.
 
 Installation
 ------------
