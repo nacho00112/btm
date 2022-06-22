@@ -1,7 +1,7 @@
 btm - Built-in Types Modificator
 ================================
 
-This is a library written in pure python that allows you to modify the python built-in types easily.
+[This](https://github.com/nacho00112/btm) is a library written in pure python that allows you to modify the python built-in types easily.
 For example:
 
 ```python
