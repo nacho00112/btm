@@ -1,4 +1,4 @@
 python3 setup.py develop --uninstall
-rm -r btm.egg-info
+rm -r btmod.egg-info
 rm -rf btm/__pycache__
 

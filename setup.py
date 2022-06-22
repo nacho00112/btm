@@ -65,7 +65,7 @@ with open("README.md") as README:
     
 try:
     setup(
-        name = "btm",
+        name = "btmod",
         description = "Modify Python Built-in Types",
         long_description = README,
         long_description_content_type = "text/markdown",
