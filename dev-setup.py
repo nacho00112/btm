@@ -5,12 +5,15 @@ from setuptools import setup, find_packages
 print("Getting btm version information...")
 
 with open(".meta_version", "r") as meta_version:
-    meta_version_config = dict(
-            list(map(
-                    str.strip, each.split(":")
-                    ))
-            for each in re.sub(r"\n\n+", "\n", re.sub("#.*", "", meta_version.read())).splitlines()
-            )
+    try:
+        meta_version_config = dict(
+                list(map(
+                        str.strip, each.split(":")
+                        ))
+                for each in re.sub(r"\n\n+", "\n", re.sub("#.*", "", meta_version.read())).splitlines()
+                )
+    except:
+        raise Exception("Bad syntax. Check your .meta_version.")
 
 version_method = meta_version_config.get("method", "none")
 if version_method == "none":
