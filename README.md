@@ -44,7 +44,7 @@ python3 test.py
 Documentation
 -------------
 
-The documentation is available in [The btm documentation page](https://github.com/nacho00112/btm/tree/main/docs/index.md)
+The documentation is available in [The btm documentation page](https://github.com/nacho00112/btm/tree/main/docs/index.md).
 
 Contribution
 ------------
