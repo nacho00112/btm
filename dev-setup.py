@@ -70,7 +70,7 @@ __all__ = %s
         repr_info = repr(info)
         if "\\n" in repr_info:
             repr_info = repr_info.replace("\\n", "\n").replace("'", "'''")
-        btm_info.write("%s = %r\n" % (name.upper(), repr_info))
+        btm_info.write("%s = %s\n" % (name.upper(), repr_info))
     btm_info.write("\n")
 
 print("btm/info.py is successfully generated")
