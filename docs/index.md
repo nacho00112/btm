@@ -113,7 +113,7 @@ mylist.attrs.something = 1
 mylist_2 = []
 mylist_2.attrs.something_2 = 2
 print(hasattr(mylist_2.attrs, "something")) # Output: False
-print(hssattr(mylist_2.attrs, "something_2")) # Output: True
+print(hasattr(mylist_2.attrs, "something_2")) # Output: True
 ```
 
 Its all! now you can modify absolutely all the Python Built-in types, with this limitations:
