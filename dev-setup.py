@@ -12,8 +12,8 @@ with open(".meta_version", "r") as meta_version:
                         ))
                 for each in re.sub(r"\n\n+", "\n", re.sub("#.*", "", meta_version.read())).splitlines()
                 )
-    except:
-        raise Exception("Bad syntax. Check your .meta_version.")
+    except Exception as exception:
+        raise Exception("Bad syntax. Check your .meta_version.") from exception
 
 version_method = meta_version_config.get("method", "none")
 if version_method == "none":
@@ -72,7 +72,7 @@ __all__ = %s
     for name, info in kwargs.items():
         repr_info = repr(info)
         if "\\n" in repr_info:
-            repr_info = repr_info.replace("\\n", "\n").replace("'", "'''")
+            repr_info = "'''" + repr_info.replace("\\n", "\n")[1:][:-1] + "'''"
         btm_info.write("%s = %s\n" % (name.upper(), repr_info))
     btm_info.write("\n")
 
@@ -92,7 +92,7 @@ from setuptools import setup
     for name, value in kwargs.items():
         repr_value = repr(value)
         if "\\n" in repr_value:
-            repr_value = repr_value.replace("\\n", "\n").replace("'", "'''")
+            repr_value = "'''" + repr_value.replace("\\n", "\n")[1:][:-1] + "'''"
         attrs.append("\t%s = %s" % (name, repr_value))
     attrs = ",\n".join(attrs)
     setup_file.write("setup(\n%s\n)" % attrs)
